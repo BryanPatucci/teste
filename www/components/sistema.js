@@ -1,7 +1,7 @@
 //Camera
 $(document).on("click", "#camera", function(){
   navigator.camera.getPicture(onSuccess, onFail, {
-    quality:50,
+    quality:100,
     destinationType: Camera.DestinationType.FILE_URI,
     correctOrientation: true,
     saveToPhotoAlbum: true
@@ -13,9 +13,15 @@ $(document).on("click", "#camera", function(){
   }
 
   function onFail(message) {
-    navigator.notification.alert("Failed because: " + message);
+    navigator.notification.alert("Falhou pois: " + message);
   }
 });
+
+//Filtro
+  document.getElementById("image").style.filter = "blur(5px)"
+  document.getElementById("image").style.filter = "grayscale(50%)"
+  document.getElementById("image").style.filter = "opacity(25%)"
+  document.getElementById("image").style.filter = "saturate(30%)"
 
 
 //Local

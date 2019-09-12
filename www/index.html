@@ -9,11 +9,19 @@
   <script src="components/jquery-3.4.1.min.js"></script>
   <script src="components/sistema.js"></script>
 
-  
-
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="css/estilo.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <style>
+    #image{
+      filter: blur(5px);
+      filter: grayscale(50%);
+      filter: opacity(25%);
+      filter: saturate(30%);
+    }
+
+  </style>
 
 </head>
 <body>
@@ -21,7 +29,16 @@
     <div class="row">
       <div class="col-xs-12">
         <button class="btn btn-block btn-lg btn-primary" id="camera">CAMERA</button>
-        <img src="" alt="" id="image" class="img-responsive">
+        <img src="" alt="" id="image" class="img img-responsive">
+        <br>
+        <label for="">Opacidade:</label>
+        <input type="range" class="">
+        <label for="">Saturação:</label>
+        <input type="range" class="">
+        <label for="">Escala de cinza:</label>
+        <input type="range" class="">
+        <label for="">Desfoque:</label>
+        <input type="range" class="">
       </div>
     </div>
     <div class="row">
