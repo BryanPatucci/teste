@@ -13,6 +13,14 @@ label{
   font-size: 25px;
 }
 
+/*imagem filtrada*/
+
+
+#image:input[type=range]{
+  -webkit-filter: opacity(0%);
+  filter: opacity(0%);
+}
+
 /*Input*/
 input[type=range] {
   height: 25px;

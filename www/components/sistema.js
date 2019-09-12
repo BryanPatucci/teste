@@ -18,12 +18,26 @@ $(document).on("click", "#camera", function(){
 });
 
 //Filtro
-  document.getElementById("image").style.filter = "blur(5px)"
-  document.getElementById("image").style.filter = "grayscale(50%)"
-  document.getElementById("image").style.filter = "opacity(25%)"
-  document.getElementById("image").style.filter = "saturate(30%)"
 
 
+
+
+
+
+function opacity(){
+ document.getElementsByTagName("input")[1].style.filter = "opacity(100%)";
+};
+/*
+function opacity(){
+  document.getElementById("image").style.filter = "opacity(0%)";
+  document.getElementById("image").style.WebkitFilter = "opacity(100%)";
+}
+
+function saturate(){
+  document.getElementById("image").style.filter = "saturate(0%)";
+  document.getElementById("image").style.WebkitFilter  = "saturate(100%)";
+}
+*/
 //Local
 $(document).on("click", "#local", function(){
     var onSuccess = function(position) {
